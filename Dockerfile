@@ -8,7 +8,7 @@ RUN apt-get update -qq && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN	wget --no-check-certificate https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.1-linux-x86_64.tar.gz && \
-	tar zxvf julia-0.6.1-linux-x86_64.tar.gz -C /julia && \
+	tar zxvf julia-0.6.1-linux-x86_64.tar.gz && \
 	rm julia-0.6.1-linux-x86_64.tar.gz && \
 	export PATH=$PATH:julia-0d7248e2ff/bin
 
